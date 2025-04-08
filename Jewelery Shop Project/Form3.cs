@@ -49,7 +49,38 @@ namespace Jewelery_Shop_Project
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close(); // Closes the current form
+
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Close(); // Closes
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Title = "Select an image";
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage; // Adjusts image size to fit PictureBox
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = null;
+        }
+
+        private void CrossBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

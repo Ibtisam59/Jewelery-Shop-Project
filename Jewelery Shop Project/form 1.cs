@@ -65,9 +65,14 @@ namespace Jewelery_Shop_Project
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form2 new_page = new Form2();
+            Form1 new_page = new Form1();
             new_page.Show(); // Opens Form2
             this.Hide();     // Hides t
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

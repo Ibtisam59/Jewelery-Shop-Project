@@ -45,6 +45,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.CrossBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,6 +54,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.Controls.Add(this.CrossBtn);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-2, -1);
             this.panel1.Name = "panel1";
@@ -115,6 +117,7 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Remove";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -125,6 +128,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -133,6 +137,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(187, 158);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // textBox5
             // 
@@ -220,6 +225,20 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Name:";
             // 
+            // CrossBtn
+            // 
+            this.CrossBtn.BackColor = System.Drawing.Color.White;
+            this.CrossBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CrossBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CrossBtn.Location = new System.Drawing.Point(759, 4);
+            this.CrossBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.CrossBtn.Name = "CrossBtn";
+            this.CrossBtn.Size = new System.Drawing.Size(43, 34);
+            this.CrossBtn.TabIndex = 16;
+            this.CrossBtn.Text = "X";
+            this.CrossBtn.UseVisualStyleBackColor = false;
+            this.CrossBtn.Click += new System.EventHandler(this.CrossBtn_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -227,6 +246,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form3";
             this.Text = "Form3";
             this.panel1.ResumeLayout(false);
@@ -257,5 +277,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button CrossBtn;
     }
 }

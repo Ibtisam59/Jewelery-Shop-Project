@@ -65,7 +65,14 @@ namespace Jewelery_Shop_Project
 
         private void button2_click(object sender, EventArgs e)
         {
-            this.Close(); // Closes the current form
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Close(); // Closes
+        }
+
+        private void CrossBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

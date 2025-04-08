@@ -34,6 +34,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.CrossBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -41,6 +42,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.Controls.Add(this.CrossBtn);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 0);
             this.panel1.Name = "panel1";
@@ -96,6 +98,20 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_click);
             // 
+            // CrossBtn
+            // 
+            this.CrossBtn.BackColor = System.Drawing.Color.White;
+            this.CrossBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CrossBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CrossBtn.Location = new System.Drawing.Point(752, 4);
+            this.CrossBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.CrossBtn.Name = "CrossBtn";
+            this.CrossBtn.Size = new System.Drawing.Size(43, 34);
+            this.CrossBtn.TabIndex = 15;
+            this.CrossBtn.Text = "X";
+            this.CrossBtn.UseVisualStyleBackColor = false;
+            this.CrossBtn.Click += new System.EventHandler(this.CrossBtn_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -105,6 +121,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.Text = "Form2";
             this.panel1.ResumeLayout(false);
@@ -120,5 +137,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button CrossBtn;
     }
 }
